@@ -49,7 +49,6 @@ class App extends Component {
             <thead>
               <tr>
                 <th>Name</th>
-                <th>Invested</th>
                 <th>Value</th>
                 <th>%</th>
               </tr>
@@ -58,8 +57,7 @@ class App extends Component {
               {this.state.investors.map((inv) =>
                 <tr>
                   <td>{inv.name}</td>
-                  <td>{inv.investment}</td>
-                  <td className="value--positive">{inv.value}</td>
+                  <td>{inv.value}</td>
                   <td className="value--positive">{inv.rate}</td>
                 </tr>
               )}
