@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+//import loadTickers from './domain/loadTickers';
 import './App.css';
 
 let tickers = [
@@ -15,13 +16,17 @@ let investors = [
 ]
 
 class App extends Component {
-  constructor() {
+  //constructor(props) {
+    constructor() {
     super();
+
     this.state = {
+      //tickers: props.tickers,
       tickers: tickers,
       investors: investors
     };
   }
+  // componentWillMount: look at the react docs for best practices
   render() {
     return (
       <div>
